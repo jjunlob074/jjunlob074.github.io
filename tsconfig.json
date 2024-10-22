@@ -5,8 +5,7 @@
     "paths": {
       "@/*": ["src/*"]
     },
-    "jsx": "react-jsx",
-    "jsxImportSource": "react"
+    "jsx": "preserve"  // Asegúrate de que esté configurado como 'preserve'
   },
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.astro"],
   "exclude": ["node_modules", "src/libs"]

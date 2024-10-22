@@ -1,5 +1,4 @@
 ---
-import { SOCIALS } from "../data/socials";
 import Layout from "../layouts/Layout.astro";
 import Drawer from "../components/Drawer.astro";
 import Component from "../components/Component.astro";
@@ -9,7 +8,7 @@ import IconAt from "../icons/at.astro";
 import IconArrow from "../icons/arrow.astro";
 ---
 
-<Layout title="Andriy Kuktenko | Full Stack Engineer">
+<Layout title="Jose Diego Junquera | Junior Web Developer">
   <main
     id="content"
     class="flex h-full min-h-screen flex-col items-center justify-center gap-6 py-10 sm:py-10 md:py-4 lg:gap-12 drawer drawer-end"
@@ -18,13 +17,13 @@ import IconArrow from "../icons/arrow.astro";
       <section
         id="about"
         aria-label="About me"
-        class="group col-span-2 flex h-40 w-full rotate-0 sm:-rotate-2 flex-col rounded-3xl border-4 border-white bg-sky-50 sm:bg-stone-100 p-4 transition-all sm:hover:rotate-0 sm:hover:bg-sky-50"
+        class="group col-span-2 flex h-65 w-full rotate-0 sm:-rotate-2 flex-col rounded-3xl border-4 hover:border-sky-600 bg-sky-50 sm:bg-stone-100 p-4 transition-all sm:hover:rotate-0 sm:hover:bg-sky-50"
       >
         <div
           class="flex lg:items-start gap-4 flex-row items-center text-center"
         >
           <img
-            class="aspect-square size-10 rounded-full grayscale-0 scale-110 sm:grayscale sm:scale-100 transition-all sm:group-hover:scale-110 sm:group-hover:grayscale-0"
+            class="aspect-square mb-2 size-16 rounded-full grayscale-0 scale-110 sm:grayscale sm:scale-100 transition-all sm:group-hover:scale-110 sm:group-hover:grayscale-0"
             src="/images/avatar.webp"
             alt="avatar"
           />
@@ -32,25 +31,26 @@ import IconArrow from "../icons/arrow.astro";
             <p
               class="font-roboto-condensed font-semibold text-sky-600 sm:text-inherit sm:group-hover:text-sky-600"
             >
-              Andriy Kuktenko
+              José Diego Junquera Lobón 
             </p>
             <p
               class="font-roboto-condensed font-medium text-sky-600 sm:text-inherit sm:group-hover:text-sky-600"
             >
-              Full Stack Engineer
+              Desarrollador Web Junior
             </p>
           </div>
         </div>
         <p
-          class="font-roboto-condensed font-thin text-sm max-w-72 text-sky-600 sm:text-inherit sm:group-hover:text-sky-600"
-        >
-          I primarily focus on TypeScript-based full-stack projects (Node.js,
-          React, React Native) and cloud platforms (AWS, DigitalOcean, Vercel,
-          Firebase, etc.), serving as a Full Stack Engineer.
-        </p>
+        class="text-center font-roboto-condensed font-thin text-sm max-w-72 text-sky-600 sm:text-inherit sm:group-hover:text-sky-600"
+      >
+      Soy <b>competente en PHP</b> y especializado en <b>Laravel y DRUPAL</b>, con una base sólida en <b>JavaScript, HTML, CSS, SQL y Node.js</b>. 
+      Mi enfoque se centra en desarrollar soluciones completas y eficientes, manejando tanto el backend como el frontend con fluidez, adaptando cada tecnología según las necesidades del proyecto.
+
+      </p>
+      
       </section>
       <div
-        class="group overflow-hidden relative flex gap-1 h-40 w-36 flex-col rounded-3xl border-4 border-white sm:bg-stone-100 p-4 transition-all bg-rose-50 rotate-0 sm:rotate-1 sm:hover:rotate-0 sm:hover:bg-rose-50"
+        class="group overflow-hidden relative flex gap-1 h-45 w-36 flex-col rounded-3xl border-4 hover:border-red-500 sm:bg-stone-100 p-4 transition-all bg-rose-50 rotate-0 sm:rotate-1 sm:hover:rotate-0 sm:hover:bg-rose-50"
       >
         <img
           class="aspect-square size-10 rounded-full grayscale-0 transition-all sm:grayscale sm:scale-100 sm:group-hover:scale-110 sm:group-hover:grayscale-0"
@@ -60,25 +60,17 @@ import IconArrow from "../icons/arrow.astro";
         <p
           class="font-roboto-condensed font-normal text-sm text-rose-700 sm:text-inherit sm:group-hover:text-rose-700"
         >
-          Senior Full Stack Engineer
+        Graduado en Desarrollo de Aplicaciones Web (2022-2024)
         </p>
         <p
-          class="flex gap-2 font-roboto-condensed font-thin text-sm text-rose-700 sm:text-inherit sm:group-hover:text-rose-700"
+          class="flex gap-2 font-roboto-condensed text-sm font-bold text-rose-700 sm:text-inherit sm:group-hover:text-rose-700"
         >
-          at <a
-            data-ccursor
-            href="https://redvike.com/case-studies/"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Redvike (opens in a new tab)"
-            class="inline-flex z-10 rounded-md font-roboto-condensed font-medium text-sm group-hover:text-[#ff2123]"
-            >Redvike</a
-          >
+          Con Matrícula de Honor.
         </p>
         <IconCursor />
       </div>
       <div
-        class="group overflow-hidden flex h-40 w-36 flex-col gap-1 rounded-3xl border-4 border-white sm:bg-stone-100 p-4 transition-all rotate-0 bg-yellow-50 sm:-rotate-2 sm:hover:rotate-0 sm:hover:bg-yellow-50"
+        class="group overflow-hidden flex h-40 w-36 flex-col gap-1 rounded-3xl border-4 hover:border-yellow-500 sm:bg-stone-100 p-4 transition-all rotate-0 bg-yellow-50 sm:-rotate-2 sm:hover:rotate-0 sm:hover:bg-yellow-50"
       >
         <img
           class="aspect-square z-10 size-10 rounded-full transition-all grayscale-0 scale-110 sm:scale-100 sm:grayscale sm:group-hover:scale-110 sm:group-hover:grayscale-0"
@@ -88,19 +80,19 @@ import IconArrow from "../icons/arrow.astro";
         <p
           class="font-roboto-condensed z-10 font-normal text-sm text-yellow-600 sm:text-inherit sm:group-hover:text-yellow-600"
         >
-          Let's keep in touch!
+          ¡ Contáctame !
         </p>
         <IconAt />
         <a
           data-ccursor
           class="inline-flex items-center gap-2 font-roboto-condensed px-3 py-2 text-yellow-600 sm:text-inherit sm:group-hover:text-yellow-600 bg-white bg-opacity-20 border border-white border-opacity-30 rounded-lg shadow-lg backdrop-blur-sm hover:bg-opacity-30 transition-all duration-200 font-medium"
-          href="mailto:andriy.kuktenko@gmail.com"
+          href="mailto:josediegojunqueralobon@gmail.com"
           data-umami-event="Mail me click"
           id="mail"
         >
-          Mail me
+          Mi Correo
           <span
-            class="w-2 h-2 rounded-full bg-green-400 duration-1000 animate-pulse"
+            class="w-2 h-2 rounded-full bg-red-600 group-hover:bg-green-500 transition duration-500"
           ></span>
         </a>
       </div>
@@ -109,7 +101,7 @@ import IconArrow from "../icons/arrow.astro";
       <h1
         class="hover-grad-text font-roboto-condensed uppercase font-semibold text-5xl lg:text-[7rem] lg:leading-[8rem]"
       >
-        A. Kuktenko
+        J.D. Junquera
       </h1>
       <div
         class="flex w-full items-center justify-center overflow-hidden gap-2"
@@ -117,7 +109,7 @@ import IconArrow from "../icons/arrow.astro";
         <p
           class="font-roboto-condensed font-medium lowercase text-2xl lg:text-[2rem] lg:leading-[2rem]"
         >
-          deliver
+          desarrollando
           <div class="group relative inline-block">
             <div
               class="transition-transform duration-100 group-hover:-translate-y-16"
@@ -125,7 +117,7 @@ import IconArrow from "../icons/arrow.astro";
               <p
                 class="font-roboto-condensed font-medium lowercase text-2xl lg:text-[2rem] lg:leading-[2rem]"
               >
-                full stack solutions.
+                soluciones.
               </p>
             </div>
             <div
@@ -134,7 +126,7 @@ import IconArrow from "../icons/arrow.astro";
               <p
                 class="font-roboto-condensed font-medium lowercase text-2xl lg:text-[2rem] lg:leading-[2rem] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500"
               >
-                fast.
+                con pasion.
               </p>
             </div>
           </div>
@@ -143,58 +135,56 @@ import IconArrow from "../icons/arrow.astro";
     </div>
     <div class="grid w-full max-w-max grid-cols-2 gap-4 md:grid-cols-4">
       <div
-        aria-label="Social media"
-        class="flex group flex-wrap h-40 w-36 flex-col rounded-3xl border-4 border-white p-4 transition-all rotate-0 bg-cyan-50 sm:bg-stone-100 sm:-rotate-2 sm:hover:rotate-0 sm:hover:bg-cyan-50"
+        aria-label="Work"
+        class="flex group flex-wrap h-40 w-36 flex-col rounded-3xl border-4 hover:border-green-500 p-4 transition-all rotate-0 bg-cyan-50 sm:bg-stone-100 sm:-rotate-2 sm:hover:rotate-0 sm:hover:bg-cyan-50"
       >
-        {
-          SOCIALS.map((social) => (
-            <a
-              data-ccursor
-              class="flex flex-col basis-1/2 items-center justify-center rounded-md"
-              href={social.url}
-              target="_blank"
-              rel="noreferrer noopener"
-              aria-label={`${social.name} (opens in a new tab)`}
-              data-umami-event={`${social.name} click`}
-              id={social.name}
-            >
-              <Component component={social.icon} />
-            </a>
-          ))
-        }
+      <p class="text-center font-roboto-condensed font-medium text-xs text-green-500 sm:text-gray-500 mb-2 sm:group-hover:text-green-500">
+        Trabajé en 
+      </p>
+      <p class="font-roboto-condensed font-light text-sm text-green-500 sm:text-gray-800 sm:text-inherit sm:group-hover:text-green-600 transition-colors mb-1">
+        <strong class="text-md">Biko2 / Jakala</strong>
+      </p>
+      <a href="https://www.museothyssen.org/" target="_blank" class="font-roboto-condensed font-light text-xs text-green-600 sm:text-gray-700 sm:text-inherit sm:group-hover:text-green-600 transition-colors mb-1 hover:underline">
+        <strong>Museo Nacional Thyssen-Bornemisza</strong>
+      </a>
+      
+      
+      <p class="font-roboto-condensed font-light text-xs text-green-500 sm:text-gray-500 sm:text-inherit sm:group-hover:text-green-500 transition-colors">
+      <strong>Marzo 2023</strong> - <strong>Junio 2024</strong>
+      </p>
       </div>
       <div class="drawer-content">
         <label
           for="experience-drawer"
-          class="group relative sm:cursor-none overflow-hidden py-4 px-0 flex h-40 w-36 flex-col gap-2 rounded-3xl border-4 border-white transition-all bg-blue-100 rotate-0 sm:-rotate-2 sm:hover:rotate-0 sm:bg-stone-100 sm:hover:bg-blue-100"
-          data-umami-event="Show my work click"
+          class="group relative overflow-hidden py-4 px-2 flex h-40 w-36 flex-col gap-2 rounded-3xl border-4 hover:border-pink-500 transition-all bg-blue-100 rotate-0 sm:-rotate-2 sm:hover:rotate-0 sm:bg-stone-100 sm:hover:bg-pink-100 cursor-pointer"
+          data-umami-event="Show my Ebook"
           id="experience"
         >
           <span
-            class="inline-flex sm:cursor-none gap-3 items-center text-3xl font-bold font-serif italic sm:not-italic sm:group-hover:italic text-pink-500 sm:text-zinc-300 sm:group-hover:text-pink-500 rounded-lg transition-all duration-100"
+            class="inline-flex gap-3 items-center text-3xl font-bold font-serif italic sm:not-italic sm:group-hover:italic text-pink-500 sm:text-zinc-300 sm:group-hover:text-pink-500 rounded-lg transition-all duration-100"
           >
-            Show
+            Ver
             <IconArrow />
           </span>
           <span
-            class="font-serif sm:cursor-none italic sm:not-italic sm:group-hover:italic text-3xl font-bold transition-all duration-100 text-pink-500 sm:text-zinc-300 sm:group-hover:text-pink-500"
-            >My</span
+            class="font-serif italic sm:not-italic sm:group-hover:italic text-3xl font-bold transition-all duration-100 text-pink-500 sm:text-zinc-300 sm:group-hover:text-pink-500"
+            >Mis</span
           >
           <span
-            class="font-serif sm:cursor-none italic sm:not-italic sm:group-hover:italic text-3xl font-bold transition-all duration-100 text-pink-500 sm:text-zinc-300 sm:group-hover:text-pink-500"
-            >Work</span
+            class="font-serif italic sm:not-italic sm:group-hover:italic text-3xl font-bold transition-all duration-100 text-pink-500 sm:text-zinc-300 sm:group-hover:text-pink-500"
+            >Ebooks</span
           >
         </label>
       </div>
       <a
-        href="https://maps.app.goo.gl/nBVupWZoVn7PLiXk9"
+        href="https://www.google.com/maps/place/11160+Barbate,+C%C3%A1diz/@36.1902135,-5.9251005,2605m/data=!3m2!1e3!4b1!4m6!3m5!1s0xd0c43682ac4641b:0xad791468ac9f92e7!8m2!3d36.1900204!4d-5.9224799!16zL20vMGJyeThr?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D"
         target="_blank"
         rel="noreferrer"
-        aria-label="Florida, USA"
-        class="relative sm:cursor-none group overflow-hidden col-span-2 h-40 w-full rounded-3xl border-4 border-white p-4 transition-all rotate-0 sm:rotate-2 sm:hover:rotate-0"
+        aria-label="Barbate, Cádiz"
+        class="relative group overflow-hidden col-span-2 h-40 w-full rounded-3xl border-4 hover:border-orange-500 p-4 transition-all rotate-0 sm:rotate-2 sm:hover:rotate-0"
       >
         <div
-          class="absolute inset-0 z-10 bg-[url('/images/florida.webp')] bg-center bg-cover bg-no-repeat filter grayscale-0 sm:grayscale sm:group-hover:grayscale-0"
+          class="absolute inset-0 z-10 bg-[url('/images/a.png')] bg-center bg-cover bg-no-repeat filter grayscale-0 sm:grayscale sm:group-hover:grayscale-0 opacity-90"
         >
         </div>
         <div
@@ -206,11 +196,23 @@ import IconArrow from "../icons/arrow.astro";
         >
         </div>
         <span
-          class="absolute left-4/2 top-1 z-30 font-semibold font-roboto-condensed text-lg text-white"
-          >FLORIDA, USA</span
+          class="absolute left-4/2 top-1 z-30 font-semibold font-roboto-condensed text-lg text-white group-hover:text-orange-100"
+          >Barbate, Cádiz</span
         >
       </a>
     </div>
-    <Drawer />
+      <div class="flex space-x-4">
+        <a href="https://www.linkedin.com" target="_blank" class="transition-transform transform hover:scale-110 shadow-lg hover:shadow-xl rounded-lg">
+          <img src="/images/linkedin.svg" alt="LinkedIn" class="h-12 w-12">
+        </a>
+        <a href="https://github.com" target="_blank" class="transition-transform transform hover:scale-110 shadow-lg hover:shadow-xl rounded-lg">
+          <img src="/images/github.svg" alt="GitHub" class="h-12 w-12">
+        </a>
+        <a href="assets/CV_JOSEDIEGO_JUNQUERA_LOBON.pdf" download target="_blank" class="transition-transform transform hover:scale-110 shadow-lg hover:shadow-xl rounded-lg">
+          <img src="/images/cv.png" alt="Documento PDF" class="h-12 w-12">
+      </a>
+      
+      </div>
+      <Drawer />
   </main>
 </Layout>

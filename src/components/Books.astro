@@ -1,0 +1,115 @@
+---
+// Importación de tipos y componentes
+import type { BooksProps } from "../types/books.props";
+import IconArrowLink from "../icons/arrow-link.astro";
+
+interface Props extends BooksProps {}
+
+const { picture, title, description, technologies, link } = Astro.props;
+---
+
+<li class="flex flex-col sm:flex-row items-start sm:space-x-4 opacity-0 transition-opacity duration-1000" data-observe>
+  {/* Renderizado para pantallas grandes */}
+  <a
+    href={link[0].href}
+    target="_blank"
+    rel="noreferrer"
+    aria-label={title}
+    class="hidden sm:flex group relative p-6 w-full flex-col sm:flex-row transition-all hover:backdrop-blur-sm duration-500 hover:rounded-lg hover:bg-amber-100"
+  >
+    {/* Imagen arriba en pantallas pequeñas, más pequeña en móviles */}
+    <img
+      class="w-24 h-38 sm:w-32 sm:h-48 mx-auto rounded-md object-cover transition-transform duration-500 group-hover:shadow-lg group-hover:scale-110"
+      src={picture}
+      alt={`${title} cover`}
+    />
+
+    <div class="group mt-4 sm:mt-0 sm:ml-12 flex flex-col justify-between">
+      {/* Título y empresa */}
+      <h3 class="text-center sm:text-left flex items-center font-medium font-roboto-condensed text-2xl leading-tight text-pink-600 group-hover:underline transition duration-200">
+        {title}
+        {link.length > 0 && <IconArrowLink class="ml-2 text-pink-600 transition-transform transform hover:translate-x-1" />}
+      </h3>
+
+      {/* Descripción */}
+      <p class="mt-2 text-sm text-center sm:text-left font-medium leading-normal sm:text-white group-hover:text-black">
+        {description}
+      </p>
+
+      {/* Tecnologías */}
+      {technologies.length > 0 && (
+        <ul class="mt-2 flex flex-wrap justify-center sm:justify-start" aria-label="Technologies used">
+          {technologies.map((technology) => (
+            <li class="mr-1.5 mt-2">
+              <div class="flex items-center font-roboto-condensed rounded-full bg-white shadow-sm px-3 py-1 text-xs font-medium leading-5 sm:border sm:border-opacity-50 sm:text-zinc-600 sm:group-hover:text-pink-500 sm:group-hover:border-pink-600">
+                {technology}
+              </div>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  </a>
+
+  {/* Renderizado para pantallas móviles */}
+  <div class="flex sm:hidden flex-col p-6 w-full text-center">
+    <img
+      class="w-24 h-38 mx-auto rounded-md object-cover"
+      src={picture}
+      alt={`${title} cover`}
+    />
+    <div class="mt-4 flex flex-col justify-between">
+      <h3 class="text-center flex items-center font-medium font-roboto-condensed text-2xl leading-tight text-pink-600">
+        {title}
+      </h3>
+      <p class="mt-2 text-sm text-center font-medium leading-normal text-white">
+        {description}
+      </p>
+      <ul class="mt-2 flex flex-wrap justify-center" aria-label="Technologies used">
+        {technologies.map((technology) => (
+          <li class="mr-1.5 mt-2">
+            <div class="flex items-center font-roboto-condensed rounded-full bg-white shadow-sm px-3 py-1 text-xs font-medium leading-5 border border-opacity-50 text-zinc-600">
+              {technology}
+            </div>
+          </li>
+        ))}
+      </ul>
+      {/* Botón para ir a la web del libro */}
+      <a
+        href={link[0].href}
+        target="_blank"
+        rel="noreferrer"
+        class="mt-4 bg-pink-600 text-white py-2 px-4 rounded hover:bg-pink-700 transition-colors duration-300 text-center"
+      >
+        Ir a la web del libro
+      </a>
+    </div>
+  </div>
+</li>
+
+<script>
+  // Script para Intersection Observer
+  document.addEventListener('DOMContentLoaded', () => {
+    const options = {
+      root: null, // usar el viewport como raíz
+      rootMargin: '0px',
+      threshold: 0.5 // porcentaje del elemento que debe estar visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove('opacity-0');
+          entry.target.classList.add('opacity-100'); // cambiar a visible
+          observer.unobserve(entry.target); // dejar de observar el elemento
+        }
+      });
+    }, options);
+
+    // Observar cada elemento que tenga el atributo data-observe
+    const items = document.querySelectorAll('[data-observe]');
+    items.forEach(item => {
+      observer.observe(item);
+    });
+  });
+</script>
