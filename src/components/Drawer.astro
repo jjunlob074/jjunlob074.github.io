@@ -26,14 +26,22 @@ import ArrowLeft from "../icons/arrow-left.astro";
         <ArrowLeft />
       </label>
     </div>
-    <section id="experience" class="mt-10 mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Work experience">
+    <section id="experience" class="mt-10 mb-10 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Work experience">
       <ol class="group/list space-y-12 slide-in">
         {BOOKS.map((book) => <Book {...book} />)}
       </ol>
     </section>
-    <h2 class="text-amber-400 text-center text-4xl mb-4 font-bold tracking-wide">
-      Nuevos Libros Pronto...
-  </h2>  
+    <div class="flex flex-wrap justify-around items-center">
+      <img 
+      src="/images/personal-logo.webp"
+      id="personal-logo"
+      alt="logo personal"
+      >
+      <h2 class="text-amber-400 text-center text-4xl mb-4 font-bold tracking-wide">
+        Nuevos Libros Pronto...
+      </h2>
+    </div>
+    
   </div>
 </div>
 
@@ -53,3 +61,10 @@ import ArrowLeft from "../icons/arrow-left.astro";
     });
   });
 </script>
+
+<style>
+#personal-logo {
+  aspect-ratio: auto;
+  max-width: 10rem;
+}
+</style>
