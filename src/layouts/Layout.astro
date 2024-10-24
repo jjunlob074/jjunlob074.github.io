@@ -22,6 +22,10 @@ import "../styles/fonts.css";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/webp" href="/favicon.webp" />
     <meta name="generator" content={Astro.generator} />
+    <!-- Preload de las fuentes -->
+    <link rel="preload" href="/fonts/RobotoCondensed-Light.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/RobotoCondensed-Medium.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/RobotoCondensed-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
     <title>{Astro.props.title}</title>
   </head>
   <body class="bg-slate-950">
