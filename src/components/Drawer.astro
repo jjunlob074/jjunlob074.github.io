@@ -15,18 +15,19 @@ import ArrowLeft from "../icons/arrow-left.astro";
     transform: translateX(0);
     opacity: 1;
   }
+  .drawer-toggle:checked ~ .drawer-side > .drawer-overlay{cursor:url('/images/cursor.png'), auto };
 </style>
 
-<input id="experience-drawer" type="checkbox" class="drawer-toggle" onchange="document.querySelectorAll('.slide-in').forEach(item => item.classList.toggle('active', this.checked))" />
-<div class="drawer-side scrollbar scrollbar-thumb-pink-700 scrollbar-track-pink-300">
-  <label for="experience-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+<input id="books-drawer" type="checkbox" class="drawer-toggle" onchange="document.querySelectorAll('.slide-in').forEach(item => item.classList.toggle('active', this.checked))" />
+<div class="drawer-side scrollbar-thin scrollbar-thumb-pink-700 scrollbar-track-slate-900">
+  <label for="books-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
   <div class="bg-slate-900 min-h-full lg:w-2/4 md:w-3/4 sm:w-full py-6 p-0 sm:p-6 relative">
     <div class="inline-flex absolute top-0 left-0 justify-between px-12 py-4 w-full">
-      <label for="experience-drawer" aria-label="close sidebar" data-ccursor class="flex items-center justify-center rounded-md group">
+      <label for="books-drawer" aria-label="close sidebar" data-ccursor class="flex items-center justify-center rounded-md group">
         <ArrowLeft />
       </label>
     </div>
-    <section id="experience" class="mt-10 mb-10 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Work experience">
+    <section id="books" class="mt-10 mb-10 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Work books">
       <ol class="group/list space-y-12 slide-in">
         {BOOKS.map((book) => <Book {...book} />)}
       </ol>

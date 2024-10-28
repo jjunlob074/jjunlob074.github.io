@@ -41,7 +41,7 @@ const { picture, title, description, technologies, link } = Astro.props;
         <ul class="mt-2 flex flex-wrap justify-center sm:justify-start" aria-label="Technologies used">
           {technologies.map((technology) => (
             <li class="mr-1.5 mt-2">
-              <div class="flex items-center font-roboto-condensed rounded-full bg-white shadow-sm px-3 py-1 text-xs font-medium leading-5 sm:border sm:border-opacity-50 sm:text-zinc-600 sm:group-hover:text-pink-500 sm:group-hover:border-pink-600">
+              <div class="flex items-center font-roboto-condensed rounded-full bg-white shadow-sm px-3 py-1 text-xs font-medium leading-5 sm:border-2 sm:border-opacity-50 sm:text-zinc-600 sm:group-hover:text-pink-500 sm:group-hover:border-pink-600">
                 {technology}
               </div>
             </li>
@@ -68,7 +68,7 @@ const { picture, title, description, technologies, link } = Astro.props;
       <ul class="mt-2 flex flex-wrap justify-center" aria-label="Technologies used">
         {technologies.map((technology) => (
           <li class="mr-1.5 mt-2">
-            <div class="flex items-center font-roboto-condensed rounded-full bg-white shadow-sm px-3 py-1 text-xs font-medium leading-5 border border-opacity-50 text-zinc-600">
+            <div class="flex items-center font-roboto-condensed rounded-full bg-white shadow-sm px-3 py-1 text-xs font-medium leading-5 border-2 border-opacity-50 text-zinc-600">
               {technology}
             </div>
           </li>

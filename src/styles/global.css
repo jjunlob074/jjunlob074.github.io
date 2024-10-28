@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  cursor: url('/images/cursor.png'), auto;
+  scrollbar-width: none;
+}
+
 @layer components {
   html {
     font-family: system-ui, sans-serif;
@@ -37,7 +42,7 @@
   }
 
   .animate-marker {
-    animation: marker 3s ease-out infinite;
+    animation: marker 4s ease-out infinite;
   }
 
   @keyframes marker {
